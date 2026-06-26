@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Sarabun', sans-serif;
+  background: #fdf6ee;
+  color: #4a3728;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: 'Sarabun', sans-serif;
+  cursor: pointer;
+}
+
+input, textarea, select {
+  font-family: 'Sarabun', sans-serif;
+}
