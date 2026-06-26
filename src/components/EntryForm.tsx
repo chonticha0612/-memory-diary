@@ -37,7 +37,6 @@ export default function EntryForm({ initial, onSave, onCancel }: Props) {
     setSaving(true)
     try {
       // Separate existing URLs from new File uploads
-      const existingUrls = photos.filter((p): p is string => typeof p === 'string')
       const newFiles = photos.filter((p): p is File => p instanceof File)
       const uploadedUrls = newFiles.length > 0 ? await uploadPhotos(newFiles) : []
 
